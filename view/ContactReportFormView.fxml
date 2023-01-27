@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ContactReportController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Contact Schedules">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="534.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <ComboBox fx:id="contactBox" layoutX="14.0" layoutY="50.0" onAction="#onContactSelected" prefWidth="150.0" promptText="Select Contact" />
+      <TableView fx:id="contactSchedule" layoutX="14.0" layoutY="87.0" prefHeight="200.0" prefWidth="576.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="34.0" text="ID" />
+          <TableColumn fx:id="titleCol" prefWidth="87.0" text="Title" />
+            <TableColumn fx:id="typeCol" prefWidth="84.0" text="Type" />
+            <TableColumn fx:id="descCol" prefWidth="95.0" text="Description" />
+            <TableColumn fx:id="startCol" prefWidth="99.0" text="Start" />
+            <TableColumn fx:id="endCol" prefWidth="83.0" text="End" />
+            <TableColumn fx:id="customerIDCol" prefWidth="93.0" text="Customer ID" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Forms">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="534.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <Button fx:id="typeReportButton" layoutX="84.0" layoutY="159.0" mnemonicParsing="false" onAction="#onTypeReport" prefHeight="83.0" prefWidth="135.0" text="Apps by Type" />
+      <Button fx:id="contactReportButton" layoutX="233.0" layoutY="159.0" mnemonicParsing="false" onAction="#onContactReport" prefHeight="83.0" prefWidth="135.0" text="Apps by Contact" />
+      <Button fx:id="userReportButton" layoutX="383.0" layoutY="159.0" mnemonicParsing="false" onAction="#onUserReport" prefHeight="83.0" prefWidth="135.0" text="User Activity" />
+   </children>
+</AnchorPane>

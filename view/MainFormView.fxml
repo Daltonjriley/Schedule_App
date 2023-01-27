@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="466.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <Button fx:id="delAppButton" layoutX="750.0" layoutY="381.0" mnemonicParsing="false" onAction="#onDeleteApp" text="Delete Appointment" />
+      <Button fx:id="customerButton" layoutX="693.0" layoutY="427.0" mnemonicParsing="false" onAction="#onCustomerButton" text="Manage Customers" />
+      <Button fx:id="reportButton" layoutX="821.0" layoutY="427.0" mnemonicParsing="false" onAction="#onReportButton" text="Reports" />
+      <TableView fx:id="appScheduleView" layoutX="3.0" layoutY="120.0" prefHeight="227.0" prefWidth="886.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="40.0" text="ID" />
+          <TableColumn fx:id="titleCol" prefWidth="88.0" text="Title" />
+            <TableColumn fx:id="descCol" prefWidth="97.0" text="Description" />
+            <TableColumn fx:id="locCol" prefWidth="75.0" text="Location" />
+            <TableColumn fx:id="contactCol" prefWidth="75.0" text="Contact" />
+            <TableColumn fx:id="typeCol" prefWidth="62.0" text="Type" />
+            <TableColumn fx:id="startCol" prefWidth="150.0" text="Start" />
+            <TableColumn fx:id="endCol" prefWidth="123.0" text="End" />
+            <TableColumn fx:id="customerIDCol" prefWidth="108.0" text="Customer ID" />
+            <TableColumn fx:id="userIDCol" prefWidth="67.0" text="User ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="314.0" layoutY="72.0" text="Appointment Schedule">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="weekRadio" layoutX="659.0" layoutY="55.0" mnemonicParsing="false" onAction="#onWeekRadio" text="By Week">
+         <toggleGroup>
+            <ToggleGroup fx:id="timeFrame" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="monthRadio" layoutX="659.0" layoutY="91.0" mnemonicParsing="false" onAction="#onMonthRadio" text="By Month" toggleGroup="$timeFrame" />
+      <Button fx:id="modAppButton" layoutX="614.0" layoutY="381.0" mnemonicParsing="false" onAction="#onModApp" text="Update Appointment" />
+      <Button fx:id="addAppButton" layoutX="491.0" layoutY="381.0" mnemonicParsing="false" onAction="#onAddApp" text="Add Appointment" />
+      <RadioButton fx:id="allRadio" layoutX="659.0" layoutY="24.0" mnemonicParsing="false" onAction="#onAllRadio" selected="true" text="All" toggleGroup="$timeFrame" />
+      <Button layoutX="14.0" layoutY="415.0" mnemonicParsing="false" onAction="#onExit" text="Exit" />
+   </children>
+</AnchorPane>

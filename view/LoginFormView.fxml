@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="mainLabel" layoutX="14.0" layoutY="14.0" text="Schedule App">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userIDField" layoutX="296.0" layoutY="161.0" />
+            <TextField fx:id="passwordField" layoutX="296.0" layoutY="200.0" />
+            <Label fx:id="IDLabel" layoutX="164.0" layoutY="163.0" text="Username">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordLabel" layoutX="166.0" layoutY="202.0" text="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="logInButton" layoutX="344.0" layoutY="270.0" mnemonicParsing="false" onAction="#onLogIn" text="Log-In">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Label fx:id="userLocation" layoutX="248.0" layoutY="99.0" text="Label" />
+            <Button fx:id="exitButton" layoutX="169.0" layoutY="270.0" mnemonicParsing="false" onAction="#onExit" text="Exit">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="locationLabel" layoutX="164.0" layoutY="99.0" text="Location" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
